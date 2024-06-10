@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>MangoMango</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://files.catbox.moe/e5kp03.png" alt="Embedded Image" class="center-image">
+        <p> Please answer my Survey! : https://rentry.co/MangosSurvey | Contact: sweetmango78 on discord /
+            MangyMango@proton.me</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#jailbreaks">Jailbreaks</a></li>
+        </ul>
+    </nav>
+    <main>
+        {{#each cards}}
+        <section id="{{key}}" class="card">
+            <h2>{{name}}</h2>
+            <div>
+                <div class="card_content">
+                    <img src="/{{key}}.png" alt="{{name}}" width="200">
+                    <p>{{creator_notes}}</p>
+                </div>
+                <div>
+                    <a href="/{{key}}.png" download="true" class="button">png card</a>
+                    <a href="/{{key}}.json" class="button">png card</a>
+                    <a href="https://chub.ai/characters/{{extensions.chub.full_path}}" class="button">chub</a>
+                </div>
+            </div>
+        </section>
+        {{/each}}
+
+        <section id="jailbreaks" class="card">
+            <h2>Jailbreaks</h2>
+            <table>
+                <tr>
+                    <td>Opus</td>
+                    <td><a href="https://files.catbox.moe/505vr7.json"
+                            target="_blank">https://files.catbox.moe/505vr7.json</a></td>
+                </tr>
+                <tr>
+                    <td>2.1</td>
+                    <td><a href="https://files.catbox.moe/gvq42c.json"
+                            target="_blank">https://files.catbox.moe/gvq42c.json</a></td>
+            </table>
+        </section>
+        <section id="extra-info" class="note">
+            <h2>Extra Info</h2>
+            <p>Future cards include a ton of redone F1 cards, a WataOshi multi-char card that is at the absolute
+                beginning of the anime when Rae wakes up in the new world, Also i plan to replace all the SD1.5 images
+                with decent images aswell as a Jurassic Park Lorebook + Character or OC to go along with it.</p>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; All my bot's are not the top quality but i enjoy making them and i hope you enjoy using them :> </p>
+    </footer>
+</body>
+
+</html>
